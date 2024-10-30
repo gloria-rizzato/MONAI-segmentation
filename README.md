@@ -7,7 +7,7 @@ A pre-trained 3D-UNet is provided and it can be used for inference on new data u
 Please, make sure you have downloaded the folder (link alla folder) for inference on new data.
 
 <p align="center">
-  <img src="https://github.com/gloria-rizzato/MONAI-segmentation/blob/main/PSD.gif" width="800" height="800" />
+  <img src="https://github.com/gloria-rizzato/MONAI-segmentation/blob/main/PSD.gif"/>
 </p>
 
 ## Data

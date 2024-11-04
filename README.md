@@ -12,7 +12,7 @@ Please, make sure you have downloaded the folder (link alla folder) for inferenc
 
 ## Data
 
-To segment PSD and to calculate its volume, please make a main directory (called for example *PSD_inference*). In this main directory insert the script [inference_final.sh] and create 2 sub-directories called *subjects* and *scripts*, respectively. In the *scripts* directory make sure to insert all the required scripts (see folder e mettere link alla folder su github). In the *subjects*  create new sub-directories (for example, you can call the sub-directories with the ID of the subjects) and insert the following files:
+To segment PSD and to calculate its volume, please make a main directory (called for example *PSD_inference*). In this main directory insert the script inference_final.sh (mettere ref alla cartella su github) and create 2 sub-directories called *subjects* and *scripts*, respectively. In the *scripts* directory make sure to insert all the required scripts (see folder e mettere link alla folder su github). In the *subjects*  create new sub-directories (for example, you can call the sub-directories with the ID of the subjects) and insert the following files:
 
 - Raw 3D-FLAIR sequence (named *raw_FLAIR*) in .nii.gz format
 - AC, PC masks (named *AC* and *PC*, respectively) in .nii.gz format

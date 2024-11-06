@@ -12,7 +12,7 @@ Please, make sure you have downloaded the folder (link alla folder) for inferenc
 
 ## Data
 
-To segment PSD and to calculate its volume, please make a main directory (called for example *PSD_inference*). In this main directory insert the script inference_final.sh (mettere ref alla cartella su github) and create 2 sub-directories called *subjects* and *scripts*, respectively. In the *scripts* directory make sure to insert all the required scripts (see folder e mettere link alla folder su github). In the *subjects*  create new sub-directories (for example, you can call the sub-directories with the ID of the subjects) and insert the following files:
+To segment PSD and to calculate its volume, please make a main directory (called for example *PSD_inference*). In this main directory insert the script [inference_final.sh](https://github.com/gloria-rizzato/MONAI-segmentation/blob/main/inference_final.sh) and create 2 sub-directories called *scripts* and *subjects*, respectively. In the *scripts* directory make sure to insert all the required scripts (see folder [scripts](https://github.com/gloria-rizzato/MONAI-segmentation/tree/main/src/scripts)). In the *subjects*  create new sub-directories (for example, you can call the sub-directories with the ID of the subjects) and insert the following files:
 
 - Raw 3D-FLAIR sequence (named *raw_FLAIR*) in .nii.gz format
 - AC, PC masks (named *AC* and *PC*, respectively) in .nii.gz format
@@ -21,21 +21,26 @@ Your folders will be organized in this way, for example:
 ![folder organization](https://github.com/user-attachments/assets/594b2b22-0592-45bf-b323-51c194c5d1d4)
 
 ```
-scripts
-│	  model.pth 
-|	  inference_newdata.py
-|  	processing_FLAIR3D.sh 
-subjects
+PSD_inference
 │
-└───SUB01
-|   |    raw_FLAIR.nii.gz
-|   |    AC.nii.gz
-|   |    PC.nii.gz
-└───SUB02
-|   |    raw_FLAIR.nii.gz
-|   |    AC.nii.gz
-|   |    PC.nii.gz
-│   ...
+|   inference_final.sh
+|
+└───scripts
+|   |    model.pth
+|   |    inference_newdata.py
+|   |    processing_FLAIR3D.sh
+|
+└───subjects
+    └───SUB01
+    |   |    raw_FLAIR.nii.gz
+    |   |    AC.nii.gz
+    |   |    PC.nii.gz
+    └───SUB02
+    |   |    raw_FLAIR.nii.gz
+    |   |    AC.nii.gz
+    |   |    PC.nii.gz
+    |   ...
+
 ```
 
 ## Requirements
@@ -45,6 +50,15 @@ python 3 is required and `python 3.10.13` was used in the project.
 Requirements can be found at requirements.txt (mettere link e txt file)
 
 Please use ```pip install requirements.txt``` to install the requirements
+
+## How to run the code
+
+Now you are ready to run the code.
+Open a new terminal, activate the environment, set the main directory (for example PSD_inference) and launch the script:
+```
+sh inference_final.sh
+```
+Type in the subject ID and the inference will start. When the process is completed you can either choose to make inference on a new subject or quit. 
 
 ## Output 
 

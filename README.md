@@ -3,8 +3,8 @@
 The project aimed to segment parasagittal dura (PSD) from 3D-FLAIR sequence in a pediatric population (2-10 years old).
 The algorithm was developed in [**MONAI**](https://monai.io/) which is a freely available, community-supported, PyTorch-based framework for deep learning in healthcare imaging.
 
-A pre-trained 3D-UNet is provided and it can be used for inference on new data using the scripts in (mettere il path alla cartella che ci sarà su github). 
-Please, make sure you have downloaded the folder (link alla folder) for inference on new data.
+A pre-trained 3D-UNet is provided and it can be used for inference on new data using the scripts model.pth in [scripts](https://github.com/gloria-rizzato/MONAI-segmentation/tree/main/src/scripts). 
+Please, make sure you have downloaded the folder [scripts](https://github.com/gloria-rizzato/MONAI-segmentation/tree/main/src/scripts) for inference on new data.
 
 <p align="center">
   <img src="https://github.com/gloria-rizzato/MONAI-segmentation/blob/main/PSD.gif"/>
